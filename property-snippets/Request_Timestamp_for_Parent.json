@@ -1,0 +1,36 @@
+{
+  "behaviors": [
+    {
+      "name": "setVariable",
+      "options": {
+        "extractLocation": "CLIENT_REQUEST_HEADER",
+        "headerName": "X-Req-Timestamp",
+        "transform": "NONE",
+        "valueSource": "EXTRACT",
+        "variableName": "PMUSER_REQ_TIMESTAMP"
+      }
+    },
+    {
+      "name": "modifyOutgoingRequestHeader",
+      "options": {
+        "action": "ADD",
+        "customHeaderName": "X-Req-Timestamp",
+        "headerValue": "{{user.PMUSER_REQ_TIMESTAMP}}",
+        "standardAddHeaderName": "OTHER"
+      }
+    }
+  ],
+  "criteria": [
+    {
+      "name": "requestHeader",
+      "options": {
+        "headerName": "X-Req-Timestamp",
+        "matchOperator": "EXISTS",
+        "matchWildcardName": false
+      }
+    }
+  ],
+  "name": "Request Timestamp for Parent",
+  "options": {},
+  "criteriaMustSatisfy": "all"
+}

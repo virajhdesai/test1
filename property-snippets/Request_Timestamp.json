@@ -1,0 +1,35 @@
+{
+  "behaviors": [
+    {
+      "name": "setVariable",
+      "options": {
+        "formatString": "%Y-%m-%dT%H:%M:%S",
+        "transform": "EPOCH_TO_STRING",
+        "valueSource": "EXPRESSION",
+        "variableName": "PMUSER_REQ_TIMESTAMP",
+        "variableValue": "{{builtin.AK_CURRENT_TIME}}"
+      }
+    },
+    {
+      "name": "modifyOutgoingRequestHeader",
+      "options": {
+        "action": "ADD",
+        "customHeaderName": "X-Req-Timestamp",
+        "headerValue": "{{user.PMUSER_REQ_TIMESTAMP}}",
+        "standardAddHeaderName": "OTHER"
+      }
+    }
+  ],
+  "criteria": [
+    {
+      "name": "requestType",
+      "options": {
+        "matchOperator": "IS",
+        "value": "CLIENT_REQ"
+      }
+    }
+  ],
+  "name": "Request Timestamp",
+  "options": {},
+  "criteriaMustSatisfy": "all"
+}

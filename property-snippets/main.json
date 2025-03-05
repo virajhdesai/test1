@@ -1,0 +1,173 @@
+{
+  "accountId": "act_1-6JHGX",
+  "contractId": "ctr_1-1NC95D",
+  "groupId": "grp_241797",
+  "propertyId": "prp_953041",
+  "propertyVersion": 516,
+  "etag": "1dd02afc369bc3443f8484f08fc0614aedd648f1",
+  "ruleFormat": "latest",
+  "comments": "Using Terra Template",
+  "rules": {
+    "name": "default",
+    "behaviors": [
+      {
+        "name": "origin",
+        "options": {
+          "cacheKeyHostname": "ORIGIN_HOSTNAME",
+          "compress": true,
+          "customCertificateAuthorities": [],
+          "customCertificates": [
+            {
+              "canBeCA": false,
+              "canBeLeaf": false,
+              "issuerRDNs": {
+                "C": "US",
+                "CN": "flexorigin",
+                "E": "fo@test.net",
+                "EmailAddress": "fo@test.net",
+                "L": "Bend",
+                "O": "xap",
+                "OU": "devel",
+                "ST": "Oregon"
+              },
+              "notAfter": 2005069037000,
+              "notBefore": 1689709037000,
+              "pemEncodedCert": "-----BEGIN CERTIFICATE-----\nMIID2TCCAsGgAwIBAgIUaX0dObHvowk3z8Txu0tqIneSql0wDQYJKoZIhvcNAQEL\nBQAwfDELMAkGA1UEBhMCVVMxDzANBgNVBAgMBk9yZWdvbjENMAsGA1UEBwwEQmVu\nZDEMMAoGA1UECgwDeGFwMQ4wDAYDVQQLDAVkZXZlbDETMBEGA1UEAwwKZmxleG9y\naWdpbjEaMBgGCSqGSIb3DQEJARYLZm9AdGVzdC5uZXQwHhcNMjMwNzE4MTkzNzE3\nWhcNMzMwNzE1MTkzNzE3WjB8MQswCQYDVQQGEwJVUzEPMA0GA1UECAwGT3JlZ29u\nMQ0wCwYDVQQHDARCZW5kMQwwCgYDVQQKDAN4YXAxDjAMBgNVBAsMBWRldmVsMRMw\nEQYDVQQDDApmbGV4b3JpZ2luMRowGAYJKoZIhvcNAQkBFgtmb0B0ZXN0Lm5ldDCC\nASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJhEW51UYxj+tiIgkO55agN0\nuksJGaUUyI27wEAE7QOa/W1bIPjBrRTXxKCbFpwRx/LysPSIWuOyLAOBBADTokre\nNUG7mcKp+fMAwNeK1wBfQsOT+FJ6BkdujjzgNmSJNW/OwZU3Et6v/jccWN7JKHR4\nPiCFoSPiS80kgkntVDqhMdTOpc5jsfQA3BSfCnEKvkZP1ATjIZ1dPH+pIGhes+D/\nO5b0eBW5I1LrFSM5NywLofBoLdSrEqPYiY6ub/oP4+hJ2t/1vEo02PgJVfGJpsqH\nyuSSVniuijVSwLX5PB2WcjzAUD1trSmVovc6Rbc4qdUmQgMEjNySyMsRjAqL+TEC\nAwEAAaNTMFEwHQYDVR0OBBYEFL9j71SmBJ0beZLjRvUOv3mBFz7YMB8GA1UdIwQY\nMBaAFL9j71SmBJ0beZLjRvUOv3mBFz7YMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZI\nhvcNAQELBQADggEBAGjVuwVAF7KFQArk4sm/Ong0Qx61xN6ZAYco3Z3nw0zqYoDe\nE0Diw82hSYgrzD/XJG5FvH7hvt/i2cv+ltBKFAqo17t7qrbv3OlWC/gCXIitQ/O/\n+jYtiog25TwUDI1AT9x7xOhjBQuxUdhVLlQEG1iGuP9KFfxwt9Cm0gyraiogy3Zt\nYYvenUp1R9c7uAql4S+K+30e4sSwnC3CJkMhgCIhVljZDC6FuqT2CiKgvhd/JIxj\nR7TM383HwXBqRjzSUBKGqJSvJ62Un8qVLtWT22z6bbtPWO6Gih/fRhuNtnlnxnG8\nIrjERcUCREalN7GmW37sXGfjmKUSEc8qJar6giQ=\n-----END CERTIFICATE-----\n",
+              "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmERbnVRjGP62IiCQ7nlqA3S6SwkZpRTIjbvAQATtA5r9bVsg+MGtFNfEoJsWnBHH8vKw9Iha47IsA4EEANOiSt41QbuZwqn58wDA14rXAF9Cw5P4UnoGR26OPOA2ZIk1b87BlTcS3q/+NxxY3skodHg+IIWhI+JLzSSCSe1UOqEx1M6lzmOx9ADcFJ8KcQq+Rk/UBOMhnV08f6kgaF6z4P87lvR4FbkjUusVIzk3LAuh8Ggt1KsSo9iJjq5v+g/j6Ena3/W8SjTY+AlV8YmmyofK5JJWeK6KNVLAtfk8HZZyPMBQPW2tKZWi9zpFtzip1SZCAwSM3JLIyxGMCov5MQIDAQAB",
+              "publicKeyAlgorithm": "RSA",
+              "publicKeyFormat": "X.509",
+              "selfSigned": true,
+              "serialNumber": "602234169975224034444028885843984148201255119453",
+              "sha1Fingerprint": "41d2adf3988c5ced592dd8bd7ed7d75655a5e232",
+              "sigAlgName": "SHA256withRSA",
+              "subjectAlternativeNames": [],
+              "subjectCN": "flexorigin",
+              "subjectRDNs": {
+                "C": "US",
+                "CN": "flexorigin",
+                "E": "fo@test.net",
+                "EmailAddress": "fo@test.net",
+                "L": "Bend",
+                "O": "xap",
+                "OU": "devel",
+                "ST": "Oregon"
+              },
+              "version": 3
+            }
+          ],
+          "customValidCnValues": [
+            "{{Origin Hostname}}",
+            "{{Forward Host Header}}",
+            "flexorigin"
+          ],
+          "enableTrueClientIp": true,
+          "forwardHostHeader": "REQUEST_HOST_HEADER",
+          "hostname": "170.187.181.126",
+          "httpPort": 80,
+          "httpsPort": 443,
+          "ipVersion": "IPV4",
+          "minTlsVersion": "DYNAMIC",
+          "originCertificate": "",
+          "originCertsToHonor": "COMBO",
+          "originSni": true,
+          "originType": "CUSTOMER",
+          "ports": "",
+          "standardCertificateAuthorities": [
+            "akamai-permissive"
+          ],
+          "tlsVersionTitle": "",
+          "trueClientIpClientSetting": true,
+          "trueClientIpHeader": "True-Client-IP",
+          "verificationMode": "CUSTOM"
+        }
+      },
+      {
+        "name": "cpCode",
+        "options": {
+          "value": {
+            "cpCodeLimits": {
+              "currentCapacity": 3474,
+              "limit": 10000,
+              "limitType": "account"
+            },
+            "createdDate": 1701796224000,
+            "description": "Viraj.Master.Lab.2023",
+            "id": 1569240,
+            "name": "Viraj.Master.Lab.2023",
+            "products": [
+              "Fresca"
+            ]
+          }
+        }
+      },
+      {
+        "name": "mPulse",
+        "options": {
+          "apiKey": "9EY8D-YL765-QZV6K-NFA9S-JRUHN",
+          "bufferSize": "",
+          "configOverride": "",
+          "enabled": true,
+          "loaderVersion": "V12",
+          "requirePci": false,
+          "titleOptional": ""
+        }
+      },
+      {
+        "name": "originIpAcl",
+        "options": {
+          "enable": true
+        }
+      }
+    ],
+    "children": [
+      "#include:Redirect_to_HTTPS.json",
+      "#include:_content__.json",
+      "#include:Request_Timestamp.json",
+      "#include:Request_Timestamp_for_Parent.json",
+      "#include:Break_connection.json",
+      "#include:Reference_Error.json"
+    ],
+    "comments": "The Default Rule template contains all the necessary and recommended behaviors. Rules are evaluated from top to bottom and the last matching rule wins.",
+    "uuid": "default",
+    "variables": [
+      {
+        "description": "",
+        "hidden": false,
+        "name": "PMUSER_REQ_TIMESTAMP",
+        "sensitive": false,
+        "value": ""
+      },
+      {
+        "description": "",
+        "hidden": false,
+        "name": "PMUSER_JA3_FINGERPRINT",
+        "sensitive": false,
+        "value": ""
+      },
+      {
+        "description": "",
+        "hidden": false,
+        "name": "PMUSER_TLS_CLIENT_HELLO",
+        "sensitive": false,
+        "value": ""
+      },
+      {
+        "description": "",
+        "hidden": false,
+        "name": "PMUSER_REF_ERROR",
+        "sensitive": false,
+        "value": ""
+      },
+      {
+        "description": "",
+        "hidden": false,
+        "name": "PMUSER_X_REFERENCE_NO",
+        "sensitive": false,
+        "value": ""
+      }
+    ],
+    "options": {
+      "is_secure": true
+    }
+  }
+}

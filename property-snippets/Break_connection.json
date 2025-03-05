@@ -1,0 +1,28 @@
+{
+  "behaviors": [
+    {
+      "name": "simulateErrorCode",
+      "options": {
+        "errorType": "ERR_CONNECT_FAIL"
+      }
+    }
+  ],
+  "criteria": [
+    {
+      "name": "requestHeader",
+      "options": {
+        "headerName": "breakconnection",
+        "matchCaseSensitiveValue": true,
+        "matchOperator": "IS_ONE_OF",
+        "matchWildcardName": false,
+        "matchWildcardValue": false,
+        "values": [
+          "true"
+        ]
+      }
+    }
+  ],
+  "name": "Break connection",
+  "options": {},
+  "criteriaMustSatisfy": "all"
+}

@@ -1,0 +1,36 @@
+{
+  "behaviors": [
+    {
+      "name": "advanced",
+      "options": {
+        "description": "Response Header X-Ref-Error",
+        "xml": "\u003cedgeservices:modify-outgoing-response.add-error-reference-header\u003eon\u003c/edgeservices:modify-outgoing-response.add-error-reference-header\u003e"
+      },
+      "uuid": "f3d666cf-77e7-4b27-abfe-d48530a04bc1"
+    },
+    {
+      "name": "globalRequestNumber",
+      "options": {
+        "headerName": "Akamai-GRN",
+        "outputOption": "RESPONSE_HEADER"
+      }
+    }
+  ],
+  "criteria": [
+    {
+      "name": "path",
+      "options": {
+        "matchCaseSensitive": false,
+        "matchOperator": "MATCHES_ONE_OF",
+        "normalize": false,
+        "values": [
+          "/test/"
+        ]
+      }
+    }
+  ],
+  "name": "Reference Error",
+  "options": {},
+  "uuid": "cbfae6c1-ff6d-4fc0-b75a-3fa4937c4fde",
+  "criteriaMustSatisfy": "any"
+}
